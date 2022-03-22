@@ -1,2 +1,2 @@
 # deliciousss
- A react app for food recipes
+ A react app for food recipes.
