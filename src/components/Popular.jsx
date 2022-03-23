@@ -22,7 +22,7 @@ function Popular() {
       const data = await api.json();
       localStorage.setItem("popular", JSON.stringify(data.recipes));
       setPopular(data.recipes);
-      console.log(data.recipes);
+      //console.log(data.recipes);
     }
       
   }
@@ -69,7 +69,7 @@ const Card = styled.div`
     border-radius: 2rem;
     position: absolute;
     left: 0;
-    with: 100%;
+    width: 100%;
     height: 100%;
     object-fit: cover;
   }
@@ -85,7 +85,7 @@ const Card = styled.div`
     text-align: center;
     font-weight: 600;
     font-size: 1rem;
-    height: 40%
+    height: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
