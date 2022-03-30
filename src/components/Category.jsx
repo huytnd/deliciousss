@@ -3,7 +3,7 @@ import { GiNoodles, GiChopsticks } from "react-icons/gi";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 
-function Category() {
+export default function Category() {
   return (
     <List>
         <SLink to={'/cuisine/italian'}>
@@ -67,5 +67,3 @@ const SLink = styled(NavLink)`
     }
   }
 `;
-
-export default Category

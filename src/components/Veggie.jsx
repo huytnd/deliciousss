@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Splide, SplideSlide } from "@splidejs/react-splide"; 
 import "@splidejs/splide/dist/css/splide.min.css";
 
-function Veggie() {
+export default function Veggie() {
   const [veggie, setVeggie] = useState([]);
 
   useEffect(() => {
@@ -100,5 +100,3 @@ const Gradient = styled.div`
   height: 100%;
   background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5));
 `;
-
-export default Veggie

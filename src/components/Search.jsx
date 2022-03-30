@@ -2,19 +2,21 @@ import styled from "styled-components";
 import { useState } from "react";
 import { FaSearch } from 'react-icons/fa';
 
-function Search() {
+export default function Search() {
     const [input, setInput] = useState("");
+
     const submitHandler = (e) => {
-        e.preventDefault();
+      e.preventDefault();
     };
-  return (
-    <FormStyle onSubmit={submitHandler}>
+
+    return (
+      <FormStyle onSubmit={submitHandler}>
         <div>
-            <FaSearch></FaSearch>
-            <input onChange={(e) => setInput(e.target.value)} type="text" />
+          <FaSearch></FaSearch>
+          <input onChange={(e) => setInput(e.target.value)} type="text" />
         </div>
-    </FormStyle>
-  )
+      </FormStyle>
+    );
 }
 
 const FormStyle = styled.form`
@@ -43,5 +45,3 @@ const FormStyle = styled.form`
     color: white;
   }
 `;
-
-export default Search
