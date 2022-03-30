@@ -9,10 +9,10 @@ export default function Cuisine() {
     let params = useParams();
 
     const getCuisine = async (name) => {
-      const res = await fetch(`
+      const response = await fetch(`
             https://api.spoonacular.com/recipes/complexSearch?apiKey=${process.env.REACT_APP_SPOONACULAR_API_KEY}&cuisine=${name}`);
       
-      const recipes = await res.json();
+      const recipes = await response.json();
       // console.log(recipes.results);
       setCuisine(recipes.results);
     };
