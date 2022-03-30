@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import { Link, useParams } from 'react-router-dom';
 
-function Cuisine() {
+export default function Cuisine() {
     const [cuisine, setCuisine] = useState([]);
 
     let params = useParams();
@@ -56,5 +56,3 @@ const Card = styled.div`
     padding: 1rem;
   }
 `;
-
-export default Cuisine
